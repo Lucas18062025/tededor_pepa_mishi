@@ -1,0 +1,18 @@
+import pandas as pd
+import openpyxl
+from pathlib import Path
+
+# Nombre del archivo (busca junto al script)
+file_path = Path(__file__).parent / 'titanic.csv'
+
+# Leer el archivo CSV
+if not file_path.exists():
+    raise FileNotFoundError(f"No se encontró el archivo: {file_path}\nEjecutando desde CWD={Path.cwd()}\nArchivos en el directorio del script: {list(Path(__file__).parent.iterdir())}")
+
+df = pd.read_csv(str(file_path), sep=';')
+
+# Mostrar las primeras filas
+print(df.head())
+
+# Información básica
+df.info()

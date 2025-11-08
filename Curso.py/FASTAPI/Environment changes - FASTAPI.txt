@@ -1,0 +1,31 @@
+# Cambios en el entorno del terminal
+
+## Extensión: GitHub.copilot-chat
+
+Habilita el uso del comando "copilot-debug" en el terminal.
+
+- `PATH=${env:PATH};c:\Users\LUCAS\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand`
+
+## Extensión: vscode.git
+
+Activar las siguientes características: git auth provider
+
+- `GIT_ASKPASS=c:\Users\LUCAS\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\git\dist\askpass.sh`
+- `VSCODE_GIT_ASKPASS_NODE=C:\Users\LUCAS\AppData\Local\Programs\Microsoft VS Code\Code.exe`
+- `VSCODE_GIT_ASKPASS_EXTRA_ARGS=`
+- `VSCODE_GIT_ASKPASS_MAIN=c:\Users\LUCAS\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\git\dist\askpass-main.js`
+- `VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-afa759abab-sock`
+
+## Extensión: ms-python.debugpy
+
+Habilita el uso de [no-config debugging](https://github.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging), 'debugpy <script.py>', en el terminal.
+
+- `PYDEVD_DISABLE_FILE_VALIDATION=1`
+- `VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=c:\Users\LUCAS\.vscode\extensions\ms-python.debugpy-2025.14.1-win32-x64\.noConfigDebugAdapterEndpoints\endpoint-ff0fe7ac7bd26e66.txt`
+- `PATH=${env:PATH}c:\Users\LUCAS\.vscode\extensions\ms-python.debugpy-2025.14.1-win32-x64\bundled\scripts\noConfigScripts`
+- `BUNDLED_DEBUGPY_PATH=c:\Users\LUCAS\.vscode\extensions\ms-python.debugpy-2025.14.1-win32-x64\bundled\libs\debugpy`
+
+## Extensión: ms-python.python
+
+- `PYTHONSTARTUP=c:\Users\LUCAS\AppData\Roaming\Code\User\workspaceStorage\405bf38f4ba52261a16c12385731dc4f\ms-python.python\pythonrc.py`
+- `PYTHON_BASIC_REPL=1`

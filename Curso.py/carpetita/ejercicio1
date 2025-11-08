@@ -1,0 +1,10 @@
+import random
+import string
+
+longuitud = int(input("Ingrese la longuitud de la contraseña: "))
+caracteres = string.ascii_letters + string.digits + string.punctuation
+contraseña = ''.join(random.choice(caracteres) for i in range(longuitud)) # type: ignore
+
+print("Contraseña generada:", contraseña)
+
+input("Presiona Enter para salir")
