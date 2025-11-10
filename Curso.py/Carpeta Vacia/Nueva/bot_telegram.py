@@ -11,7 +11,7 @@ import urllib.request
 import json
 
 # Reemplaza 'TU_TOKEN' con el token que te dio @BotFather
-TOKEN = '8360611459:AAHmDvn3PzUWTVo1iEA8DPLa79AJVci_rQc'
+TOKEN = '836541301g84g3g1drfgg3513215021rd3Vci_rQc'
 
 # Comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
